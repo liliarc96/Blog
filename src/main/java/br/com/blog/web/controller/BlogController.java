@@ -22,4 +22,15 @@ public class BlogController {
 		ModelAndView view = new ModelAndView("criar-postagem");
 		return view;
 	}
+
+	@RequestMapping(value = "/criar-comentario", method = RequestMethod.GET)
+	public ModelAndView novoComentario() {
+		ModelAndView view = new ModelAndView("criar-comentario");
+		return view;
+	}
+	@RequestMapping(value = "/criar-comentario", method = RequestMethod.POST)
+	public ModelAndView novoComentarioPost(@RequestParam String nome, @RequestParam String comentario) {
+		ModelAndView view = new ModelAndView("criar-comentario");
+		return view;
+	}
 }
