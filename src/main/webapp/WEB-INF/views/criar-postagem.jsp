@@ -4,13 +4,89 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Insert title here</title>
+<title>Criar Nova Postagem</title>
 </head>
-<body>
-	<form method = "POST">
-	<p>TÍTULO:<input type="text" name="titulo" value="Digite um título..."/></p>
-	<p>CONTEÚDO:<input type="text" name="post" value="Digite a sua postagem..."/></p>
-	<p><input type = "submit" name = "Postar"/></p>
+<style>
+	body {
+	  font-family: Arial, Helvetica, sans-serif;
+	  background-color: #ACE1AF;
+	}
+	
+	h1 {color: #789d7c;text-align: center;}
+	
+	* {
+	  box-sizing: border-box;
+	}
+	
+	/* Add padding to containers */
+	.container {
+	  padding: 16px;
+	  background-color: #e1ffe4;
+	}
+	
+	/* Full-width input fields */
+	input[type=text] {
+	  width: 100%;
+	  padding: 15px;
+	  margin: 5px 0 22px 0;
+	  display: inline-block;
+	  border: none;
+	  background: #f1f1f1;
+	}
+	
+	input[type=text]:focus {
+	  background-color: #a6d4abe1;
+	  outline: none;
+	}
+	
+	/* Overwrite default styles of hr */
+	hr {
+	  border: 1px solid gray;
+	  margin-bottom: 25px;
+	}
+	
+	/* Set a style for the submit button */
+	.registerbtn {
+	  background-color: #04AA6D;
+	  color: white;
+	  padding: 16px 20px;
+	  margin: 8px 0;
+	  border: none;
+	  cursor: pointer;
+	  width: 100%;
+	  opacity: 0.9;
+	}
+	
+	.registerbtn:hover {
+	  opacity: 1;
+	}
+	
+	/* Add a orange text color to links */
+	a {
+	  color: rgb(255, 176, 30);
+	}
+	
+	/* Set a grey background color and center the text of the "sign in" section */
+	.signin {
+	  background-color: #f1f1f1;
+	  text-align: center;
+	}
+	</style>
+	
+	</head>
+	<body>
+	<form>
+	  <div class="container">
+		<h1>Adicionar um comentÃ¡rio</h1>
+		<hr>
+	
+		<label for="email"><b>Nome</b></label>
+		<input type="text" placeholder="Digite o seu nome..." name="email" id="email" required>
+		<label for="email"><b>ComentÃ¡rio</b></label>
+		<input type="text" placeholder="Digite o seu comentÃ¡rio..." name="email" id="email" required>
+		<hr>
+		<button type="submit" class="registerbtn">Confirmar</button>
+	  </div>
 	</form>
 </body>
 </html>
