@@ -6,24 +6,26 @@
 <meta charset="ISO-8859-1">
 <title>BLOG DE FULANA</title>
 <style>
-body {background-color: #ACE1AF;
-     font-family: arial;}
-h1 {color: #789d7c;
-   text-align: center;}
-h2 {color: #789a9d;
-   text-align: center;}
-p {margin: 5px 0 22px 0;}
-button {background-color: #04AA6D;
-        color: white;
-        padding: 16px 20px;
-        margin: 8px 0;
-        border: none;
-        cursor: pointer;
-        width: 100%;
-        opacity: 0.9;}
-.bordaPostagem {background-color: #e1ffe4;
-                border-style: groove;
-                border-radius: 5px;}
+    body {background-color: #ACE1AF;
+        font-family: arial;}
+    h1 {color: #789d7c;
+    text-align: center;}
+    h2 {color: #789a9d;
+    text-align: center;}
+    p {margin: 5px 0 22px 0;
+       margin-left:1em;}
+    button {background-color: #04AA6D;
+            color: white;
+            padding: 16px 20px;
+            margin: 8px 0;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+            opacity: 0.9;}
+    .bordaPostagem {background-color: #e1ffe4;
+                    border-style: groove;
+                    border-radius: 5px;}
+    a {color: rgba(241, 161, 12, 0.89);}
 </style>
 </style>
 

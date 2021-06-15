@@ -12,7 +12,8 @@
     text-align: center;}
     h2 {color: #789a9d;
     text-align: center;}
-    p {margin: 5px 0 22px 0;}
+    p {margin: 5px 0 22px 0;
+       margin-left:1em;}
     button {background-color: #04AA6D;
             color: white;
             padding: 16px 20px;
@@ -24,6 +25,7 @@
     .bordaPostagem {background-color: #e1ffe4;
                     border-style: groove;
                     border-radius: 5px;}
+	a {color: rgba(241, 161, 12, 0.89);}
 </style>
 
 </head>
