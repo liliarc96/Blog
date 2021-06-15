@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Criar Nova Postagem</title>
+<title>BLOG DE FULANA</title>
 </head>
 <style>
 	body {
