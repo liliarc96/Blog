@@ -4,6 +4,7 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
+<title>BLOG DE FULANA</title>
 <style>
 body {background-color: #ACE1AF;
      font-family: arial;}
