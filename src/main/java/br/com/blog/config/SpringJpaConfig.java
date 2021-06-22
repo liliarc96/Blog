@@ -21,14 +21,18 @@ public class SpringJpaConfig {
 	@Bean
 	public DataSource dataSource() {
 		DriverManagerDataSource ds = new DriverManagerDataSource();
+		
 		ds.setDriverClassName("com.mysql.jdbc.Driver");
 		ds.setUrl("jdbc:mysql://localhost:3306/blog?createDatabaseIfNotExist=true");
 		ds.setUsername("root");
-		ds.setPassword("");
+		ds.setPassword("MAio@281996");
 		return ds;
 	}
+	
+	@Bean
 	public EntityManagerFactory entityManagerFactory(DataSource dataSource) {
 		LocalContainerEntityManagerFactoryBean factory = new LocalContainerEntityManagerFactoryBean();
+		
 		factory.setDataSource(dataSource);
 		factory.setPackagesToScan("br.com.blog.model");
 		factory.setJpaVendorAdapter(new HibernateJpaVendorAdapter());
@@ -36,14 +40,18 @@ public class SpringJpaConfig {
 		factory.afterPropertiesSet();
 		return factory.getObject();
 	}
+	
+	@Bean
 	public JpaTransactionManager jpaTransactionManager(EntityManagerFactory factory) {
 		JpaTransactionManager tx = new JpaTransactionManager();
+		
 		tx.setEntityManagerFactory(factory);
 		tx.setJpaDialect(new HibernateJpaDialect());
 		return tx;
 	}
 	private Properties jpaProperties() {
 		Properties props = new Properties();
+		
 		props.setProperty("hibernate.show_sql", "true");
 		props.setProperty("hibernate.format_sql", "true");
 		props.setProperty("hibernate.hbm2dd1.auto", "update");

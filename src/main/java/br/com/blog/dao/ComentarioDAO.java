@@ -1,6 +1,5 @@
 package br.com.blog.dao;
 
-import java.util.LinkedList;
 import java.util.List;
 
 import javax.persistence.EntityManager;
@@ -19,7 +18,6 @@ public class ComentarioDAO {
 	private EntityManager entityManager;
 	
 	public ComentarioDAO() {
-
 
 	}
 	
